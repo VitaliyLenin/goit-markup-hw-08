@@ -26,7 +26,6 @@ ol {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -277,7 +276,13 @@ img {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__list {
@@ -319,6 +324,14 @@ img {
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -333,8 +346,24 @@ img {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   text-align: center;
+}
+
+.cards__item {
+  width: 100%;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .cards__title {
