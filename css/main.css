@@ -40,16 +40,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -168,7 +178,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg-img.jpg);
-  max-width: 1600px;
+  min-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,14 +212,36 @@ img {
   border-radius: 4px;
 }
 
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .feature > .container {
-  display: flex;
   align-items: center;
 }
 
 .feature__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.feature__box {
+  width: auto;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature__title {
@@ -219,6 +251,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .feature__text {
@@ -226,18 +259,21 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
-  width: 270px;
+  width: 100%;
 }
 
-.feature__box {
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feature-item {
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .feature-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .work {
