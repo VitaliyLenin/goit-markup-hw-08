@@ -69,7 +69,7 @@
         </div>
       </section>
 
-      <!-- <section class="feature section">
+      <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества студии</h2>
           <ul class="feature__list list">
@@ -122,15 +122,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
               <div class="work__wrap">
-                <img src="images/img1.jpg" alt="Набирает текст" width="370" height="294" />
+                <img
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                  src="images/img1.jpg"
+                  alt="Набирает текст"
+                  width="370"
+                  height="294"
+                />
                 <h3 class="img-title">Десктопні додатки</h3>
               </div>
             </li>
@@ -138,6 +144,7 @@
             <li class="work__item">
               <div class="work__wrap">
                 <img
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                   src="images/img2.jpg"
                   alt="Адаптирует приложения под телефон"
                   width="370"
@@ -149,26 +156,41 @@
 
             <li class="work__item">
               <div class="work__wrap">
-                <img src="images/img3.jpg" alt="Рисует" width="370" height="294" />
+                <img
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                  src="images/img3.jpg"
+                  alt="Рисует"
+                  width="370"
+                  height="294"
+                />
                 <h3 class="img-title">Дизайнерські рішення</h3>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="cards list">
             <li class="cards__item card-box">
-              <img
-                class="cards__img"
-                src="images/photo1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo1-tab.jpg 1x, ./images/photo1-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo1-mob.jpg 1x, ./images/photo1-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img class="cards__img" src="images/photo1.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+
               <div class="cards__wrap">
                 <h3 class="cards__title">Ігор Дем'яненко</h3>
                 <p class="cards__text">Product Designer</p>
@@ -205,13 +227,22 @@
               </div>
             </li>
             <li class="cards__item card-box">
-              <img
-                class="cards__img"
-                src="images/photo2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo2-tab.jpg 1x, ./images/photo2-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo2-mob.jpg 1x, ./images/photo2-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img class="cards__img" src="images/photo2.jpg" alt="Ольга Рєпіна" />
+              </picture>
+
               <div class="cards__wrap">
                 <h3 class="cards__title">Ольга Рєпіна</h3>
                 <p class="cards__text">Frontend Developer</p>
@@ -248,13 +279,22 @@
               </div>
             </li>
             <li class="cards__item card-box">
-              <img
-                class="cards__img"
-                src="images/photo3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo3-tab.jpg 1x, ./images/photo3-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo3-mob.jpg 1x, ./images/photo3-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img class="cards__img" src="images/photo3.jpg" alt="Микола Тарасов" />
+              </picture>
+
               <div class="cards__wrap">
                 <h3 class="cards__title">Микола Тарасов</h3>
                 <p class="cards__text">Marketingr</p>
@@ -291,13 +331,22 @@
               </div>
             </li>
             <li class="cards__item card-box">
-              <img
-                class="cards__img"
-                src="images/photo4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo4.jpg 1x, ./images/photo4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/photo4-tab.jpg 1x, ./images/photo4-tab-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/photo4-mob.jpg 1x, ./images/photo4-mob-2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+                <img class="cards__img" src="images/photo4.jpg" alt="Михайло Єрмаков" />
+              </picture>
+
               <div class="cards__wrap">
                 <h3 class="cards__title">Михайло Єрмаков</h3>
                 <p class="cards__text">UI Designer</p>
@@ -335,9 +384,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -385,10 +434,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <div class="footer-adress-wrap">
@@ -405,56 +454,56 @@
                     href="https://goo.gl/maps/mcbDyAHMGKXvk1hA8"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >
+                  >
                     м. Київ, пр-т Лесі Українки, 26
                   </a>
                 </li>
-              <li class="address__item">
-                <a class="address__connect link" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="address-item">
-                <a class="address__connect link" href="tel:+380991111111">+38 099 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+                <li class="address__item">
+                  <a class="address__connect link" href="mailto:info@example.com">
+                    info@example.com
+                  </a>
+                </li>
+                <li class="address-item">
+                  <a class="address__connect link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
 
           <div class="footer-soc-wrap">
-          <h3 class="footer-soc__title">приєднуйтесь</h3>
-          <ul class="footer-soc__item">
-            <li class="footer-soc__list list">
-              <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-soc__icon" width="20" height="20">
-                  <use href="./images/sprite-svg.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc__list list">
-              <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-soc__icon" width="20" height="20">
-                  <use href="./images/sprite-svg.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc__list list">
-              <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-soc__icon" width="20" height="20">
-                  <use href="./images/sprite-svg.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc__list list">
-              <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
-                <svg class="footer-soc__icon" width="20" height="20">
-                  <use href="./images/sprite-svg.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <h3 class="footer-soc__title">приєднуйтесь</h3>
+            <ul class="footer-soc__item">
+              <li class="footer-soc__list list">
+                <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-soc__icon" width="20" height="20">
+                    <use href="./images/sprite-svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc__list list">
+                <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-soc__icon" width="20" height="20">
+                    <use href="./images/sprite-svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc__list list">
+                <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-soc__icon" width="20" height="20">
+                    <use href="./images/sprite-svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc__list list">
+                <a class="footer-soc__link link" href="" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-soc__icon" width="20" height="20">
+                    <use href="./images/sprite-svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          
         </div>
-        
 
         <form>
           <label class="form-text" for="email">Підпишіться на розсилку</label>
@@ -469,7 +518,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
